@@ -19,3 +19,8 @@ DATA_DIR_NAME = "data"
 日志文件存放目录名称
 """
 LOG_DIR_NAME = "log"
+
+"""
+资源文件夹名称
+"""
+RESOURCES_DIR_NAME = "resources"

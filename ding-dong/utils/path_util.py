@@ -6,6 +6,7 @@
 # @File    : path_util.py
 
 from constants.project_constants import PROJECT_NAME
+from constants.project_constants import RESOURCES_DIR_NAME
 import os
 
 
@@ -21,6 +22,14 @@ def get_project_root_path():
     # 截取到项目名称前/的路径
     root_path = cur_path[:cur_path.find(PROJECT_NAME + "/") + len(PROJECT_NAME + "/")]
     return root_path
+
+
+def get_resources_dir_path():
+    """
+    获取项目资源文件目录
+    :return:
+    """
+    return get_project_root_path() + "/" + PROJECT_NAME + "/" + RESOURCES_DIR_NAME
 
 
 if __name__ == "__main__":

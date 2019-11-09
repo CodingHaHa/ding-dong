@@ -21,7 +21,7 @@ def project_init():
 
 def project_dirs_init():
     """
-    初始化项目目录结构
+    初始化项目目录结构【数据目录、日志目录】
     :return:
     """
     project_root_path = get_project_root_path()
@@ -31,5 +31,3 @@ def project_dirs_init():
         os.mkdir(project_data_path)
     if not os.path.exists(project_log_path):
         os.mkdir(project_log_path)
-
-
