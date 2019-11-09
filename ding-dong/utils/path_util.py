@@ -7,6 +7,7 @@
 
 from constants.project_constants import PROJECT_NAME
 from constants.project_constants import RESOURCES_DIR_NAME
+from constants.project_constants import DATA_DIR_NAME
 import os
 
 
@@ -30,6 +31,14 @@ def get_resources_dir_path():
     :return:
     """
     return get_project_root_path() + "/" + PROJECT_NAME + "/" + RESOURCES_DIR_NAME
+
+
+def get_data_dir_path():
+    """
+    获取数据文件目录路径
+    :return:
+    """
+    return get_project_root_path() + "/" + PROJECT_NAME + "/" + DATA_DIR_NAME
 
 
 if __name__ == "__main__":
